@@ -144,5 +144,6 @@ const businesses = [
   
 export const getBusinesses = () => {
     const copyOfData = businesses.map(item => ({...item}))
+   
     return copyOfData
 }

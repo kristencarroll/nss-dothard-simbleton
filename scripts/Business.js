@@ -1,11 +1,14 @@
-import { getBusinesses } from "./database.js"
 
-export const Supply = ( supplyObject ) => {
+
+export const Business = ( businessObject ) => {
     return `
-        <section class="business">
-            <h2 class="supply__type">${supplyObject.type}</h2>
-            <div class="supply__price">
-                Price: ${supplyObject.price}
+        <section class="businesses">
+            <h2 class="business__name">${businessObject.companyName}</h2>
+            <div class="business__address">
+                 ${businessObject.addressFullStreet} 
+                 ${businessObject.addressCity}
+                 ${businessObject.addressStateCode}
+                 ${businessObject.addressZipCode}
             </div>
         </section>
     `
