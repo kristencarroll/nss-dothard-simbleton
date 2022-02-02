@@ -10,6 +10,7 @@ export const Business = ( businessObject ) => {
                  ${businessObject.addressStateCode}
                  ${businessObject.addressZipCode}
             </div>
+            
         </section>
     `
 }
