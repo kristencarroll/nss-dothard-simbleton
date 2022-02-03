@@ -1,5 +1,7 @@
 import { getBusinesses } from "./database.js";
 import { Business } from "./Business.js"
+import { getNewYorkBusinessArray } from "./database.js";
+import { NewYorkBusiness} from "./Business.js";
 
 const contentTarget = document.querySelector(".businesses")
 
@@ -12,4 +14,16 @@ export const BusinessList = () => {
             contentTarget.innerHTML += Business(businessObject)
         }
     );
+}
+
+export const NewYorkBusinessList = () => {
+    const newNewYorkBusinessArray = getNewYorkBusinessArray()
+    contentTarget.innerHTML = "<h1>New York Businesses</h1>"
+
+    newNewYorkBusinessArray.forEach(
+        (newYorkBusinessObject) => {
+            contentTarget.innerHTML += NewYorkBusiness(newYorkBusinessObject)
+        }
+    )
+
 }

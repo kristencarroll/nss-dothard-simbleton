@@ -11,7 +11,21 @@ export const Business = ( businessObject ) => {
                  ${businessObject.addressZipCode}
             </div>
             
+            
         </section>
     `
 }
 
+export const NewYorkBusiness = ( newYorkBusinessObject ) => {
+    return `
+    <article class="businessList--newYork">
+        <h2 class="business__name">${newYorkBusinessObject.companyName}</h2>
+        <div class="business__address">
+            ${newYorkBusinessObject.addressFullStreet} 
+            ${newYorkBusinessObject.addressCity}
+            ${newYorkBusinessObject.addressStateCode}
+            ${newYorkBusinessObject.addressZipCode}
+        </div>
+    </article>    
+    `
+}
