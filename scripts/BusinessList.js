@@ -16,13 +16,16 @@ export const BusinessList = () => {
     );
 }
 
+
+const newYorkArticle = document.querySelector(".businessList--newYork")
+
 export const NewYorkBusinessList = () => {
     const newNewYorkBusinessArray = getNewYorkBusinessArray()
-    contentTarget.innerHTML = "<h1>New York Businesses</h1>"
+    newYorkArticle.innerHTML = "<h1>New York Businesses</h1>"
 
     newNewYorkBusinessArray.forEach(
         (newYorkBusinessObject) => {
-            contentTarget.innerHTML += NewYorkBusiness(newYorkBusinessObject)
+            newYorkArticle.innerHTML += NewYorkBusiness(newYorkBusinessObject)
         }
     )
 

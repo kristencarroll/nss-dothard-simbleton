@@ -16,6 +16,7 @@ export const Business = ( businessObject ) => {
     `
 }
 
+
 export const NewYorkBusiness = ( newYorkBusinessObject ) => {
     return `
     <article class="businessList--newYork">
