@@ -30,3 +30,15 @@ export const NewYorkBusiness = ( newYorkBusinessObject ) => {
     </article>    
     `
 }
+
+export const PurchasingAgents = ( purchasingAgentObject ) => {
+    return `
+    <article class="agents">
+        <h2 class="agent__name">${purchasingAgentObject.fullName}</h2>
+        <div class="agent__details">
+            ${purchasingAgentObject.company} 
+            ${purchasingAgentObject.phoneNumber}
+        </div>
+    </article>    
+    `
+}
