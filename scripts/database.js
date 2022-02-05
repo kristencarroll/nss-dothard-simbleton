@@ -174,4 +174,9 @@ export const getPurchasingAgents = () => {
   return purchasingAgentsArray
 }
 
+//find the first instance of whatever matching string is typed in finders box
+export const findBusiness = (companyName) => {
+  const matchingBusiness = businesses.find(business => business.companyName === companyName)
 
+  return matchingBusiness
+}

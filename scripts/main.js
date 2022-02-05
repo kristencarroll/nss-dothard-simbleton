@@ -31,5 +31,10 @@ let applicationHTML =
             ${PurchasingAgentList()}
         </article>
 
+        <article class="foundCompanies">
+            
+        </article>
+
+
 
     `
