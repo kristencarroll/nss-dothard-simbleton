@@ -4,6 +4,7 @@ import { getNewYorkBusinessArray } from "./database.js";
 import { NewYorkBusiness} from "./Business.js";
 import { getPurchasingAgents } from "./database.js";
 import { PurchasingAgents } from "./Business.js"
+import { findBusiness } from "./database.js"
 
 const contentTarget = document.querySelector(".businesses")
 
@@ -50,28 +51,7 @@ export const PurchasingAgentList = () => {
 
 }
 
-const businesses = getBusinesses()
+//const businesses = getBusinesses()
 const companySearchResultArticle = document.querySelector(".foundCompanies")
 
-document
-    .querySelector("#companySearch")
-        .addEventListener(
-            "keypress",
-            keyPressEvent => {
-                if (keyPressEvent.charCode === 13) {
-                    /*
-                        When the user presses 'Enter', find the matching business.
 
-                        You can use the `.includes()` string method to
-                        see if a smaller string is part of a larger string.
-
-                        Example: business.companyName.includes(keyPressEvent.target.value)
-                    */
-
-                    const foundBusiness = businesses.find(business => business.companyName === companyName)
-
-                    return matchingBusiness/** implement .find() method here */
-
-                    companySearchResultArticle.innerHTML = Business(businessObject);
-                }
-        });
